@@ -1,11 +1,21 @@
-from datetime import datetime
 from typing import List
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
-class Tarefa(BaseModel):
+class ItemRequest(BaseModel):
     descricao: str
-    dt_criacao: datetime
+    
+    model_config = ConfigDict(from_attributes=True)
 
-class TarefasUsuario(BaseModel):
-    usuario: str
-    tarefa: List[Tarefa] = []
+
+class ItemRequestCadastro(BaseModel):
+    itens: List[ItemRequest]
+    
+    model_config = ConfigDict(from_attributes=True)
+
+        
+class ItemResponse(BaseModel):
+    id: int
+    descricao: str
+    data_criacao: str
+    
+    model_config = ConfigDict(from_attributes=True)

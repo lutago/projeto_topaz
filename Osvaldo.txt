@@ -1,0 +1,10 @@
+Nome do usuário: Osvaldo
+
+ID da tarefas: 1
+Data de criação tarefas: 2024-06-23T17:25:26.615111
+Descrição da tarefa:Trabalhar
+---------------------------------------
+ID da tarefas: 6
+Data de criação tarefas: 2024-06-24T20:45:36.318142
+Descrição da tarefa:programar
+---------------------------------------
