@@ -12,7 +12,7 @@ from gerador.gerador_arquivo_txt import gerador_report
 @pytest.fixture(scope="module", autouse=True)
 def start_backend_app():
     # Comando para iniciar a aplicação backend (exemplo para FastAPI com uvicorn)
-    cmd = ["uvicorn", "main_api:app", "--reload"]
+    cmd = ["uvicorn", "app.main_api:app_topaz", "--reload"]
     backend_process = subprocess.Popen(cmd)
 
     # Aguardar um momento para a aplicação iniciar
